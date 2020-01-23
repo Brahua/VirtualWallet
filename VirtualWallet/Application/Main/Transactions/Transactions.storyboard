@@ -126,7 +126,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q7b-Hp-x3J"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="transactionTab" id="5WG-NN-imL"/>
                     <navigationItem key="navigationItem" title="Transactions" id="ZyQ-8k-Gfm"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="UVA-rt-cJA" id="hSu-Gl-GDK"/>
                     </connections>
@@ -167,6 +169,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="transactionTab" width="32" height="32"/>
         <image name="twitter" width="64" height="64"/>
         <namedColor name="Secondary">
             <color red="0.0" green="0.56470588235294117" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

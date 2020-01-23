@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5F2769C623D764890081EE00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2769C523D764890081EE00 /* AppDelegate.swift */; };
 		5F2769C823D764890081EE00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2769C723D764890081EE00 /* SceneDelegate.swift */; };
-		5F2769CA23D764890081EE00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2769C923D764890081EE00 /* ViewController.swift */; };
 		5F2769CD23D764890081EE00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769CB23D764890081EE00 /* Main.storyboard */; };
 		5F2769CF23D7648C0081EE00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769CE23D7648C0081EE00 /* Assets.xcassets */; };
 		5F2769D223D7648C0081EE00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769D023D7648C0081EE00 /* LaunchScreen.storyboard */; };
@@ -27,13 +26,13 @@
 		5F38744E23D9FB9F006C26A5 /* OnBoardingStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F38744D23D9FB9F006C26A5 /* OnBoardingStepsViewController.swift */; };
 		5F38745223DA28E3006C26A5 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F38745123DA28E2006C26A5 /* TransactionViewController.swift */; };
 		5F38745423DA3B9A006C26A5 /* EmptyState.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F38745323DA3B9A006C26A5 /* EmptyState.xib */; };
+		5F38745623DA4E72006C26A5 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F38745523DA4E72006C26A5 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5F2769C223D764880081EE00 /* VirtualWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2769C523D764890081EE00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F2769C723D764890081EE00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5F2769C923D764890081EE00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5F2769CC23D764890081EE00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F2769CE23D7648C0081EE00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F2769D123D7648C0081EE00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		5F38744D23D9FB9F006C26A5 /* OnBoardingStepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingStepsViewController.swift; sourceTree = "<group>"; };
 		5F38745123DA28E2006C26A5 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 		5F38745323DA3B9A006C26A5 /* EmptyState.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyState.xib; sourceTree = "<group>"; };
+		5F38745523DA4E72006C26A5 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,8 +191,8 @@
 		5F2769E323D766720081EE00 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				5F2769C923D764890081EE00 /* ViewController.swift */,
 				5F2769CB23D764890081EE00 /* Main.storyboard */,
+				5F38745523DA4E72006C26A5 /* TabBarViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -309,10 +309,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F2769CA23D764890081EE00 /* ViewController.swift in Sources */,
 				5F2769F823D7B1580081EE00 /* Shadow.swift in Sources */,
 				5F2769FC23D7BB8D0081EE00 /* OnBoardingContainerViewController.swift in Sources */,
 				5F2769FE23D7BC7E0081EE00 /* OnBoardingViewController.swift in Sources */,
+				5F38745623DA4E72006C26A5 /* TabBarViewController.swift in Sources */,
 				5F38744E23D9FB9F006C26A5 /* OnBoardingStepsViewController.swift in Sources */,
 				5F2769C623D764890081EE00 /* AppDelegate.swift in Sources */,
 				5F2769C823D764890081EE00 /* SceneDelegate.swift in Sources */,

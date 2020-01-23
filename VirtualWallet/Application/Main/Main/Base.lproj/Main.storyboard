@@ -3,25 +3,26 @@
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="Wqc-Zj-vz4">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="QGJ-jH-Dzh" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="QGJ-jH-Dzh" customClass="TabBarViewController" customModule="VirtualWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0CP-cq-8NE">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="Secondary"/>
                     </tabBar>
                     <connections>
-                        <segue destination="gw7-Hr-2PL" kind="relationship" relationship="viewControllers" id="5Mw-R4-01r"/>
-                        <segue destination="Du9-cI-ROs" kind="relationship" relationship="viewControllers" id="LzD-Bg-Zil"/>
-                        <segue destination="vCt-VR-ISg" kind="relationship" relationship="viewControllers" id="ea3-WQ-hUU"/>
-                        <segue destination="XgY-qJ-zJ1" kind="relationship" relationship="viewControllers" id="zkC-SK-9OR"/>
-                        <segue destination="kJD-jl-mMX" kind="relationship" relationship="viewControllers" id="KPS-uR-fLI"/>
+                        <segue destination="XgY-qJ-zJ1" kind="relationship" relationship="viewControllers" id="rq9-79-rxj"/>
+                        <segue destination="gw7-Hr-2PL" kind="relationship" relationship="viewControllers" id="nY2-EX-n77"/>
+                        <segue destination="Du9-cI-ROs" kind="relationship" relationship="viewControllers" id="6mu-2l-Qay"/>
+                        <segue destination="vCt-VR-ISg" kind="relationship" relationship="viewControllers" id="Mt4-WK-HyC"/>
+                        <segue destination="kJD-jl-mMX" kind="relationship" relationship="viewControllers" id="wbK-JT-39d"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HgS-m3-vXQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -36,7 +37,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="68e-as-irc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-654" y="183"/>
+            <point key="canvasLocation" x="-773" y="-45"/>
         </scene>
         <!--Statistics-->
         <scene sceneID="xyL-Kl-Fml">
@@ -46,7 +47,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hvg-qj-jyT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-655" y="-149"/>
+            <point key="canvasLocation" x="-757" y="421"/>
         </scene>
         <!--Budget-->
         <scene sceneID="WtC-uY-v9h">
@@ -56,7 +57,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WnP-db-8f1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-665" y="25"/>
+            <point key="canvasLocation" x="-787" y="64"/>
         </scene>
         <!--Profile-->
         <scene sceneID="icP-R3-5oW">
@@ -66,7 +67,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qZR-Wt-bJd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-662" y="285"/>
+            <point key="canvasLocation" x="-762" y="307"/>
         </scene>
         <!--Add-->
         <scene sceneID="DpZ-Q2-N2o">
@@ -76,7 +77,12 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J9e-DB-3mx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-651" y="459"/>
+            <point key="canvasLocation" x="-773" y="190"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Secondary">
+            <color red="0.0" green="0.56470588235294117" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
