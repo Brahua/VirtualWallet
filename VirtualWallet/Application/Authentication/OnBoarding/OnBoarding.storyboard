@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="jfZ-tG-GAP">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="zXc-YL-lyw" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PGb-XK-IJS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-641" y="82"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TWG-IA-ESH">
+            <objects>
+                <viewController id="479-Xr-alh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gus-Qz-qIG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UJ7-ya-RKV">
+                                <rect key="frame" x="107" y="128" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Jsx-ur-vxR"/>
+                                    <constraint firstAttribute="height" constant="200" id="dxn-zA-fRe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGe-JE-9yI">
+                                <rect key="frame" x="20" y="348" width="374" height="50"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="36"/>
+                                <color key="textColor" name="Secondary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBR-Uh-CPR">
+                                <rect key="frame" x="20" y="406" width="374" height="23.666666666666686"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UJ7-ya-RKV" firstAttribute="centerY" secondItem="gus-Qz-qIG" secondAttribute="centerY" constant="-140" id="41F-ew-l2Z"/>
+                            <constraint firstItem="hGe-JE-9yI" firstAttribute="leading" secondItem="GLi-nC-mSZ" secondAttribute="leading" constant="20" id="45H-r1-WRC"/>
+                            <constraint firstItem="GLi-nC-mSZ" firstAttribute="trailing" secondItem="hGe-JE-9yI" secondAttribute="trailing" constant="20" id="E0S-UB-hxN"/>
+                            <constraint firstItem="UJ7-ya-RKV" firstAttribute="centerX" secondItem="gus-Qz-qIG" secondAttribute="centerX" id="GsP-Kb-VKR"/>
+                            <constraint firstItem="GLi-nC-mSZ" firstAttribute="trailing" secondItem="fBR-Uh-CPR" secondAttribute="trailing" constant="20" id="GzT-vd-OeY"/>
+                            <constraint firstItem="hGe-JE-9yI" firstAttribute="top" secondItem="UJ7-ya-RKV" secondAttribute="bottom" constant="20" id="gY0-iO-HQQ"/>
+                            <constraint firstItem="fBR-Uh-CPR" firstAttribute="leading" secondItem="GLi-nC-mSZ" secondAttribute="leading" constant="20" id="jIT-zB-9s4"/>
+                            <constraint firstItem="fBR-Uh-CPR" firstAttribute="top" secondItem="hGe-JE-9yI" secondAttribute="bottom" constant="8" id="k25-a2-YjZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GLi-nC-mSZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rsw-kh-Mp6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="82"/>
+        </scene>
+        <!--On Boarding Container View Controller-->
+        <scene sceneID="pNo-Zq-ORy">
+            <objects>
+                <viewController id="CCY-kv-sdH" customClass="OnBoardingContainerViewController" customModule="VirtualWallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4kz-ac-H6I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8CB-kb-Oqg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <connections>
+                                    <segue destination="zXc-YL-lyw" kind="embed" identifier="openOnBoarding" id="9cl-Fm-Kpa"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKf-4I-vfl">
+                                <rect key="frame" x="20" y="666" width="374" height="50"/>
+                                <color key="backgroundColor" name="Secondary"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="C6N-6a-7Oc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Go!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderUIColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="eyY-FH-lEc">
+                                <rect key="frame" x="187.66666666666666" y="549" width="39" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="71U-Tf-EoD" firstAttribute="bottom" secondItem="8CB-kb-Oqg" secondAttribute="bottom" id="8XZ-XC-FaH"/>
+                            <constraint firstItem="eyY-FH-lEc" firstAttribute="centerX" secondItem="4kz-ac-H6I" secondAttribute="centerX" id="98X-af-rvh"/>
+                            <constraint firstItem="8CB-kb-Oqg" firstAttribute="top" secondItem="71U-Tf-EoD" secondAttribute="top" id="9yN-fs-phH"/>
+                            <constraint firstItem="UKf-4I-vfl" firstAttribute="leading" secondItem="71U-Tf-EoD" secondAttribute="leading" constant="20" id="Yma-It-bwW"/>
+                            <constraint firstItem="8CB-kb-Oqg" firstAttribute="leading" secondItem="71U-Tf-EoD" secondAttribute="leading" id="Zmf-pC-AAi"/>
+                            <constraint firstItem="UKf-4I-vfl" firstAttribute="top" secondItem="eyY-FH-lEc" secondAttribute="bottom" constant="80" id="cDm-V4-1qw"/>
+                            <constraint firstItem="71U-Tf-EoD" firstAttribute="bottom" secondItem="UKf-4I-vfl" secondAttribute="bottom" constant="20" id="hhN-bV-rK3"/>
+                            <constraint firstItem="71U-Tf-EoD" firstAttribute="trailing" secondItem="8CB-kb-Oqg" secondAttribute="trailing" id="uf9-1P-mCo"/>
+                            <constraint firstItem="71U-Tf-EoD" firstAttribute="trailing" secondItem="UKf-4I-vfl" secondAttribute="trailing" constant="20" id="xQc-u4-rug"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="71U-Tf-EoD"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="eyY-FH-lEc" id="XBh-Ik-rfb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sL9-N1-exx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1410" y="82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Secondary">
+            <color red="0.0" green="0.56470588235294117" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
