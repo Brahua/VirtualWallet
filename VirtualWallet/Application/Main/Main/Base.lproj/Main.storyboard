@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QGJ-jH-Dzh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QGJ-jH-Dzh">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,50 +29,50 @@
             </objects>
             <point key="canvasLocation" x="-1329" y="183"/>
         </scene>
-        <!--Transactions-->
+        <!--Transacciones-->
         <scene sceneID="OIs-cb-w19">
             <objects>
-                <viewControllerPlaceholder storyboardName="Transactions" id="XgY-qJ-zJ1" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Transacciones" id="XgY-qJ-zJ1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="j3e-1M-bYo"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="68e-as-irc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-773" y="-45"/>
         </scene>
-        <!--Statistics-->
+        <!--Estadisticas-->
         <scene sceneID="xyL-Kl-Fml">
             <objects>
-                <viewControllerPlaceholder storyboardName="Statistics" id="kJD-jl-mMX" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Estadisticas" id="kJD-jl-mMX" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="OCX-gj-63i"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hvg-qj-jyT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-757" y="421"/>
         </scene>
-        <!--Budget-->
+        <!--Presupuesto-->
         <scene sceneID="WtC-uY-v9h">
             <objects>
-                <viewControllerPlaceholder storyboardName="Budget" id="gw7-Hr-2PL" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Presupuesto" id="gw7-Hr-2PL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="1td-8T-qv6"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WnP-db-8f1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-787" y="64"/>
         </scene>
-        <!--Profile-->
+        <!--Perfil-->
         <scene sceneID="icP-R3-5oW">
             <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="vCt-VR-ISg" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Perfil" id="vCt-VR-ISg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="mvb-aR-bUJ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qZR-Wt-bJd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-762" y="307"/>
         </scene>
-        <!--Add-->
+        <!--Agregar-->
         <scene sceneID="DpZ-Q2-N2o">
             <objects>
-                <viewControllerPlaceholder storyboardName="Add" id="Du9-cI-ROs" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Agregar" id="Du9-cI-ROs" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="z53-se-Nps"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J9e-DB-3mx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

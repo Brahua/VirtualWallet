@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BudgetViewController: UIViewController {
+class PresupuestoViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
@@ -33,24 +33,24 @@ class BudgetViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let cell = UINib(nibName: "TransactionCell", bundle: Bundle.main)
+        let cell = UINib(nibName: "TransaccionCelda", bundle: Bundle.main)
 
-        tableView.register(cell, forCellReuseIdentifier: "cellTransaction")
+        tableView.register(cell, forCellReuseIdentifier: "TransaccionCelda")
     }
 
 }
 
-extension BudgetViewController: UITableViewDelegate {
+extension PresupuestoViewController: UITableViewDelegate {
     
 }
 
-extension BudgetViewController: UITableViewDataSource{
+extension PresupuestoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let count = 10
         return count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        tableView.dequeueReusableCell(withIdentifier: "cellTransaction", for: indexPath)
+        tableView.dequeueReusableCell(withIdentifier: "TransaccionCelda", for: indexPath)
     }
 }

@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		181524C223DA94FE00E7A07C /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181524C123DA94FE00E7A07C /* TransactionCell.xib */; };
-		181524C423DA968E00E7A07C /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181524C323DA968E00E7A07C /* BudgetViewController.swift */; };
-		181524C623DAB19200E7A07C /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181524C523DAB19200E7A07C /* LottieViewController.swift */; };
-		181524C823DAB6E900E7A07C /* userAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 181524C723DAB6E900E7A07C /* userAnimation.json */; };
+		181524C223DA94FE00E7A07C /* TransaccionCelda.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181524C123DA94FE00E7A07C /* TransaccionCelda.xib */; };
+		181524C423DA968E00E7A07C /* PresupuestoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181524C323DA968E00E7A07C /* PresupuestoViewController.swift */; };
 		5D45E81F23FB9620008A3EC6 /* VirtualWalletCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D45E81623FB9620008A3EC6 /* VirtualWalletCore.framework */; };
 		5D45E82623FB9620008A3EC6 /* VirtualWalletCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45E82523FB9620008A3EC6 /* VirtualWalletCoreTests.swift */; };
 		5D45E82823FB9620008A3EC6 /* VirtualWalletCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D45E81823FB9620008A3EC6 /* VirtualWalletCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,19 +27,19 @@
 		5F2769CD23D764890081EE00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769CB23D764890081EE00 /* Main.storyboard */; };
 		5F2769CF23D7648C0081EE00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769CE23D7648C0081EE00 /* Assets.xcassets */; };
 		5F2769D223D7648C0081EE00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769D023D7648C0081EE00 /* LaunchScreen.storyboard */; };
-		5F2769E523D76E520081EE00 /* Transactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769E423D76E520081EE00 /* Transactions.storyboard */; };
-		5F2769EA23D771D20081EE00 /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769E923D771D20081EE00 /* Statistics.storyboard */; };
-		5F2769EC23D771EE0081EE00 /* Budget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769EB23D771EE0081EE00 /* Budget.storyboard */; };
-		5F2769EE23D772260081EE00 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769ED23D772260081EE00 /* Profile.storyboard */; };
-		5F2769F023D772600081EE00 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769EF23D772600081EE00 /* Add.storyboard */; };
+		5F2769E523D76E520081EE00 /* Transacciones.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769E423D76E520081EE00 /* Transacciones.storyboard */; };
+		5F2769EA23D771D20081EE00 /* Estadisticas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769E923D771D20081EE00 /* Estadisticas.storyboard */; };
+		5F2769EC23D771EE0081EE00 /* Presupuesto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769EB23D771EE0081EE00 /* Presupuesto.storyboard */; };
+		5F2769EE23D772260081EE00 /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769ED23D772260081EE00 /* Perfil.storyboard */; };
+		5F2769F023D772600081EE00 /* Agregar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769EF23D772600081EE00 /* Agregar.storyboard */; };
 		5F2769F223D773C20081EE00 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769F123D773C20081EE00 /* SignIn.storyboard */; };
 		5F2769F423D78A700081EE00 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769F323D78A700081EE00 /* Colors.xcassets */; };
-		5F2769F823D7B1580081EE00 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2769F723D7B1580081EE00 /* Shadow.swift */; };
+		5F2769F823D7B1580081EE00 /* Sombra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2769F723D7B1580081EE00 /* Sombra.swift */; };
 		5F2769FA23D7B78C0081EE00 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769F923D7B78C0081EE00 /* OnBoarding.storyboard */; };
 		5F2769FC23D7BB8D0081EE00 /* OnBoardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2769FB23D7BB8D0081EE00 /* OnBoardingContainerViewController.swift */; };
 		5F2769FE23D7BC7E0081EE00 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2769FD23D7BC7E0081EE00 /* OnBoardingViewController.swift */; };
 		5F38744E23D9FB9F006C26A5 /* OnBoardingStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F38744D23D9FB9F006C26A5 /* OnBoardingStepsViewController.swift */; };
-		5F38745223DA28E3006C26A5 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F38745123DA28E2006C26A5 /* TransactionViewController.swift */; };
+		5F38745223DA28E3006C26A5 /* TransaccionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F38745123DA28E2006C26A5 /* TransaccionViewController.swift */; };
 		5F38745423DA3B9A006C26A5 /* EmptyState.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F38745323DA3B9A006C26A5 /* EmptyState.xib */; };
 		5F38745623DA4E72006C26A5 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F38745523DA4E72006C26A5 /* TabBarViewController.swift */; };
 		E8031DE8842F66EC9D679DE1 /* Pods_VirtualWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A3F0213338D0C5BD1CD2F61 /* Pods_VirtualWallet.framework */; };
@@ -86,10 +84,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		181524C123DA94FE00E7A07C /* TransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
-		181524C323DA968E00E7A07C /* BudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
-		181524C523DAB19200E7A07C /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
-		181524C723DAB6E900E7A07C /* userAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userAnimation.json; sourceTree = "<group>"; };
+		181524C123DA94FE00E7A07C /* TransaccionCelda.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransaccionCelda.xib; sourceTree = "<group>"; };
+		181524C323DA968E00E7A07C /* PresupuestoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresupuestoViewController.swift; sourceTree = "<group>"; };
 		5D45E81623FB9620008A3EC6 /* VirtualWalletCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VirtualWalletCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D45E81823FB9620008A3EC6 /* VirtualWalletCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VirtualWalletCore.h; sourceTree = "<group>"; };
 		5D45E81923FB9620008A3EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,19 +107,19 @@
 		5F2769CE23D7648C0081EE00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F2769D123D7648C0081EE00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F2769D323D7648C0081EE00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F2769E423D76E520081EE00 /* Transactions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transactions.storyboard; sourceTree = "<group>"; };
-		5F2769E923D771D20081EE00 /* Statistics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
-		5F2769EB23D771EE0081EE00 /* Budget.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Budget.storyboard; sourceTree = "<group>"; };
-		5F2769ED23D772260081EE00 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
-		5F2769EF23D772600081EE00 /* Add.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
+		5F2769E423D76E520081EE00 /* Transacciones.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transacciones.storyboard; sourceTree = "<group>"; };
+		5F2769E923D771D20081EE00 /* Estadisticas.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Estadisticas.storyboard; sourceTree = "<group>"; };
+		5F2769EB23D771EE0081EE00 /* Presupuesto.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Presupuesto.storyboard; sourceTree = "<group>"; };
+		5F2769ED23D772260081EE00 /* Perfil.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
+		5F2769EF23D772600081EE00 /* Agregar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Agregar.storyboard; sourceTree = "<group>"; };
 		5F2769F123D773C20081EE00 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		5F2769F323D78A700081EE00 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		5F2769F723D7B1580081EE00 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		5F2769F723D7B1580081EE00 /* Sombra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sombra.swift; sourceTree = "<group>"; };
 		5F2769F923D7B78C0081EE00 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		5F2769FB23D7BB8D0081EE00 /* OnBoardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContainerViewController.swift; sourceTree = "<group>"; };
 		5F2769FD23D7BC7E0081EE00 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		5F38744D23D9FB9F006C26A5 /* OnBoardingStepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingStepsViewController.swift; sourceTree = "<group>"; };
-		5F38745123DA28E2006C26A5 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+		5F38745123DA28E2006C26A5 /* TransaccionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransaccionViewController.swift; sourceTree = "<group>"; };
 		5F38745323DA3B9A006C26A5 /* EmptyState.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyState.xib; sourceTree = "<group>"; };
 		5F38745523DA4E72006C26A5 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		7A3F0213338D0C5BD1CD2F61 /* Pods_VirtualWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VirtualWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -267,12 +263,12 @@
 		5F2769DE23D766340081EE00 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				5F2769E623D771870081EE00 /* Add */,
-				5F2769E823D771970081EE00 /* Budget */,
-				5F2769E723D7718D0081EE00 /* Statistics */,
+				5F2769E623D771870081EE00 /* Agregar */,
+				5F2769E823D771970081EE00 /* Presupuesto */,
+				5F2769E723D7718D0081EE00 /* Estadisticas */,
 				5F2769E323D766720081EE00 /* Main */,
-				5F2769E223D766660081EE00 /* Profile */,
-				5F2769E123D7665D0081EE00 /* Transactions */,
+				5F2769E223D766660081EE00 /* Perfil */,
+				5F2769E123D7665D0081EE00 /* Transacciones */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -296,25 +292,23 @@
 			path = SignIn;
 			sourceTree = "<group>";
 		};
-		5F2769E123D7665D0081EE00 /* Transactions */ = {
+		5F2769E123D7665D0081EE00 /* Transacciones */ = {
 			isa = PBXGroup;
 			children = (
-				5F2769E423D76E520081EE00 /* Transactions.storyboard */,
-				5F38745123DA28E2006C26A5 /* TransactionViewController.swift */,
+				5F2769E423D76E520081EE00 /* Transacciones.storyboard */,
+				5F38745123DA28E2006C26A5 /* TransaccionViewController.swift */,
 				5F38745323DA3B9A006C26A5 /* EmptyState.xib */,
-				181524C123DA94FE00E7A07C /* TransactionCell.xib */,
+				181524C123DA94FE00E7A07C /* TransaccionCelda.xib */,
 			);
-			path = Transactions;
+			path = Transacciones;
 			sourceTree = "<group>";
 		};
-		5F2769E223D766660081EE00 /* Profile */ = {
+		5F2769E223D766660081EE00 /* Perfil */ = {
 			isa = PBXGroup;
 			children = (
-				181524C723DAB6E900E7A07C /* userAnimation.json */,
-				5F2769ED23D772260081EE00 /* Profile.storyboard */,
-				181524C523DAB19200E7A07C /* LottieViewController.swift */,
+				5F2769ED23D772260081EE00 /* Perfil.storyboard */,
 			);
-			path = Profile;
+			path = Perfil;
 			sourceTree = "<group>";
 		};
 		5F2769E323D766720081EE00 /* Main */ = {
@@ -326,35 +320,35 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		5F2769E623D771870081EE00 /* Add */ = {
+		5F2769E623D771870081EE00 /* Agregar */ = {
 			isa = PBXGroup;
 			children = (
-				5F2769EF23D772600081EE00 /* Add.storyboard */,
+				5F2769EF23D772600081EE00 /* Agregar.storyboard */,
 			);
-			path = Add;
+			path = Agregar;
 			sourceTree = "<group>";
 		};
-		5F2769E723D7718D0081EE00 /* Statistics */ = {
+		5F2769E723D7718D0081EE00 /* Estadisticas */ = {
 			isa = PBXGroup;
 			children = (
-				5F2769E923D771D20081EE00 /* Statistics.storyboard */,
+				5F2769E923D771D20081EE00 /* Estadisticas.storyboard */,
 			);
-			path = Statistics;
+			path = Estadisticas;
 			sourceTree = "<group>";
 		};
-		5F2769E823D771970081EE00 /* Budget */ = {
+		5F2769E823D771970081EE00 /* Presupuesto */ = {
 			isa = PBXGroup;
 			children = (
-				5F2769EB23D771EE0081EE00 /* Budget.storyboard */,
-				181524C323DA968E00E7A07C /* BudgetViewController.swift */,
+				5F2769EB23D771EE0081EE00 /* Presupuesto.storyboard */,
+				181524C323DA968E00E7A07C /* PresupuestoViewController.swift */,
 			);
-			path = Budget;
+			path = Presupuesto;
 			sourceTree = "<group>";
 		};
 		5F2769F623D7B1310081EE00 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5F2769F723D7B1580081EE00 /* Shadow.swift */,
+				5F2769F723D7B1580081EE00 /* Sombra.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -511,19 +505,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F2769FA23D7B78C0081EE00 /* OnBoarding.storyboard in Resources */,
-				181524C823DAB6E900E7A07C /* userAnimation.json in Resources */,
 				5F2769D223D7648C0081EE00 /* LaunchScreen.storyboard in Resources */,
 				5F2769CF23D7648C0081EE00 /* Assets.xcassets in Resources */,
 				5F2769CD23D764890081EE00 /* Main.storyboard in Resources */,
-				5F2769EA23D771D20081EE00 /* Statistics.storyboard in Resources */,
+				5F2769EA23D771D20081EE00 /* Estadisticas.storyboard in Resources */,
 				5F2769F223D773C20081EE00 /* SignIn.storyboard in Resources */,
-				181524C223DA94FE00E7A07C /* TransactionCell.xib in Resources */,
+				181524C223DA94FE00E7A07C /* TransaccionCelda.xib in Resources */,
 				5F2769F423D78A700081EE00 /* Colors.xcassets in Resources */,
 				5F38745423DA3B9A006C26A5 /* EmptyState.xib in Resources */,
-				5F2769E523D76E520081EE00 /* Transactions.storyboard in Resources */,
-				5F2769EE23D772260081EE00 /* Profile.storyboard in Resources */,
-				5F2769F023D772600081EE00 /* Add.storyboard in Resources */,
-				5F2769EC23D771EE0081EE00 /* Budget.storyboard in Resources */,
+				5F2769E523D76E520081EE00 /* Transacciones.storyboard in Resources */,
+				5F2769EE23D772260081EE00 /* Perfil.storyboard in Resources */,
+				5F2769F023D772600081EE00 /* Agregar.storyboard in Resources */,
+				5F2769EC23D771EE0081EE00 /* Presupuesto.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,16 +592,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F2769F823D7B1580081EE00 /* Shadow.swift in Sources */,
+				5F2769F823D7B1580081EE00 /* Sombra.swift in Sources */,
 				5F2769FC23D7BB8D0081EE00 /* OnBoardingContainerViewController.swift in Sources */,
 				5F2769FE23D7BC7E0081EE00 /* OnBoardingViewController.swift in Sources */,
 				5F38745623DA4E72006C26A5 /* TabBarViewController.swift in Sources */,
-				181524C423DA968E00E7A07C /* BudgetViewController.swift in Sources */,
-				181524C623DAB19200E7A07C /* LottieViewController.swift in Sources */,
+				181524C423DA968E00E7A07C /* PresupuestoViewController.swift in Sources */,
 				5F38744E23D9FB9F006C26A5 /* OnBoardingStepsViewController.swift in Sources */,
 				5F2769C623D764890081EE00 /* AppDelegate.swift in Sources */,
 				5F2769C823D764890081EE00 /* SceneDelegate.swift in Sources */,
-				5F38745223DA28E3006C26A5 /* TransactionViewController.swift in Sources */,
+				5F38745223DA28E3006C26A5 /* TransaccionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

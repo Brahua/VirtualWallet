@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TransactionViewController: UIViewController {
+class TransaccionViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
@@ -21,9 +21,9 @@ class TransactionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let cell = UINib(nibName: "TransactionCell", bundle: Bundle.main)
+        let cell = UINib(nibName: "TransaccionCelda", bundle: Bundle.main)
 
-        tableView.register(cell, forCellReuseIdentifier: "cellTransaction")
+        tableView.register(cell, forCellReuseIdentifier: "TransaccionCelda")
     }
     
 
@@ -39,11 +39,11 @@ class TransactionViewController: UIViewController {
 
 }
 
-extension TransactionViewController: UITableViewDelegate {
+extension TransaccionViewController: UITableViewDelegate {
     
 }
 
-extension TransactionViewController: UITableViewDataSource{
+extension TransaccionViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let count = 0
         tableView.backgroundView = count == 0 ? emptyStateView : nil
