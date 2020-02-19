@@ -11,6 +11,19 @@
 		181524C423DA968E00E7A07C /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181524C323DA968E00E7A07C /* BudgetViewController.swift */; };
 		181524C623DAB19200E7A07C /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181524C523DAB19200E7A07C /* LottieViewController.swift */; };
 		181524C823DAB6E900E7A07C /* userAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 181524C723DAB6E900E7A07C /* userAnimation.json */; };
+		5D45E81F23FB9620008A3EC6 /* VirtualWalletCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D45E81623FB9620008A3EC6 /* VirtualWalletCore.framework */; };
+		5D45E82623FB9620008A3EC6 /* VirtualWalletCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45E82523FB9620008A3EC6 /* VirtualWalletCoreTests.swift */; };
+		5D45E82823FB9620008A3EC6 /* VirtualWalletCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D45E81823FB9620008A3EC6 /* VirtualWalletCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D45E82B23FB9620008A3EC6 /* VirtualWalletCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D45E81623FB9620008A3EC6 /* VirtualWalletCore.framework */; };
+		5D45E82C23FB9620008A3EC6 /* VirtualWalletCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D45E81623FB9620008A3EC6 /* VirtualWalletCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D94C0A023FCEAAF00A4C562 /* Cuenta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C09823FCEAAE00A4C562 /* Cuenta.swift */; };
+		5D94C0A123FCEAAF00A4C562 /* Ingreso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C09923FCEAAE00A4C562 /* Ingreso.swift */; };
+		5D94C0A223FCEAAF00A4C562 /* Transaccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C09A23FCEAAE00A4C562 /* Transaccion.swift */; };
+		5D94C0A323FCEAAF00A4C562 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C09B23FCEAAE00A4C562 /* Enums.swift */; };
+		5D94C0A423FCEAAF00A4C562 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C09C23FCEAAF00A4C562 /* Date.swift */; };
+		5D94C0A523FCEAAF00A4C562 /* Gasto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C09D23FCEAAF00A4C562 /* Gasto.swift */; };
+		5D94C0A623FCEAAF00A4C562 /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C09E23FCEAAF00A4C562 /* Persona.swift */; };
+		5D94C0A723FCEAAF00A4C562 /* Presupuesto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C09F23FCEAAF00A4C562 /* Presupuesto.swift */; };
 		5F2769C623D764890081EE00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2769C523D764890081EE00 /* AppDelegate.swift */; };
 		5F2769C823D764890081EE00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2769C723D764890081EE00 /* SceneDelegate.swift */; };
 		5F2769CD23D764890081EE00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769CB23D764890081EE00 /* Main.storyboard */; };
@@ -34,11 +47,63 @@
 		E8031DE8842F66EC9D679DE1 /* Pods_VirtualWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A3F0213338D0C5BD1CD2F61 /* Pods_VirtualWallet.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5D45E82023FB9620008A3EC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F2769BA23D764880081EE00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D45E81523FB9620008A3EC6;
+			remoteInfo = VirtualWalletCore;
+		};
+		5D45E82223FB9620008A3EC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F2769BA23D764880081EE00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F2769C123D764880081EE00;
+			remoteInfo = VirtualWallet;
+		};
+		5D45E82923FB9620008A3EC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F2769BA23D764880081EE00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D45E81523FB9620008A3EC6;
+			remoteInfo = VirtualWalletCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5D45E82D23FB9620008A3EC6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5D45E82C23FB9620008A3EC6 /* VirtualWalletCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		181524C123DA94FE00E7A07C /* TransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
 		181524C323DA968E00E7A07C /* BudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
 		181524C523DAB19200E7A07C /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
 		181524C723DAB6E900E7A07C /* userAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userAnimation.json; sourceTree = "<group>"; };
+		5D45E81623FB9620008A3EC6 /* VirtualWalletCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VirtualWalletCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D45E81823FB9620008A3EC6 /* VirtualWalletCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VirtualWalletCore.h; sourceTree = "<group>"; };
+		5D45E81923FB9620008A3EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D45E81E23FB9620008A3EC6 /* VirtualWalletCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VirtualWalletCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D45E82523FB9620008A3EC6 /* VirtualWalletCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualWalletCoreTests.swift; sourceTree = "<group>"; };
+		5D45E82723FB9620008A3EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D94C09823FCEAAE00A4C562 /* Cuenta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cuenta.swift; sourceTree = "<group>"; };
+		5D94C09923FCEAAE00A4C562 /* Ingreso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingreso.swift; sourceTree = "<group>"; };
+		5D94C09A23FCEAAE00A4C562 /* Transaccion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaccion.swift; sourceTree = "<group>"; };
+		5D94C09B23FCEAAE00A4C562 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		5D94C09C23FCEAAF00A4C562 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		5D94C09D23FCEAAF00A4C562 /* Gasto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gasto.swift; sourceTree = "<group>"; };
+		5D94C09E23FCEAAF00A4C562 /* Persona.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persona.swift; sourceTree = "<group>"; };
+		5D94C09F23FCEAAF00A4C562 /* Presupuesto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presupuesto.swift; sourceTree = "<group>"; };
 		5F2769C223D764880081EE00 /* VirtualWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2769C523D764890081EE00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F2769C723D764890081EE00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,10 +132,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5D45E81323FB9620008A3EC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D45E81B23FB9620008A3EC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D45E81F23FB9620008A3EC6 /* VirtualWalletCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5F2769BF23D764880081EE00 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D45E82B23FB9620008A3EC6 /* VirtualWalletCore.framework in Frameworks */,
 				E8031DE8842F66EC9D679DE1 /* Pods_VirtualWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,10 +159,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D45E81723FB9620008A3EC6 /* VirtualWalletCore */ = {
+			isa = PBXGroup;
+			children = (
+				5D94C09823FCEAAE00A4C562 /* Cuenta.swift */,
+				5D94C09C23FCEAAF00A4C562 /* Date.swift */,
+				5D94C09B23FCEAAE00A4C562 /* Enums.swift */,
+				5D94C09D23FCEAAF00A4C562 /* Gasto.swift */,
+				5D94C09923FCEAAE00A4C562 /* Ingreso.swift */,
+				5D94C09E23FCEAAF00A4C562 /* Persona.swift */,
+				5D94C09F23FCEAAF00A4C562 /* Presupuesto.swift */,
+				5D94C09A23FCEAAE00A4C562 /* Transaccion.swift */,
+				5D45E81823FB9620008A3EC6 /* VirtualWalletCore.h */,
+				5D45E81923FB9620008A3EC6 /* Info.plist */,
+			);
+			path = VirtualWalletCore;
+			sourceTree = "<group>";
+		};
+		5D45E82423FB9620008A3EC6 /* VirtualWalletCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D45E82523FB9620008A3EC6 /* VirtualWalletCoreTests.swift */,
+				5D45E82723FB9620008A3EC6 /* Info.plist */,
+			);
+			path = VirtualWalletCoreTests;
+			sourceTree = "<group>";
+		};
 		5F2769B923D764880081EE00 = {
 			isa = PBXGroup;
 			children = (
 				5F2769C423D764890081EE00 /* VirtualWallet */,
+				5D45E81723FB9620008A3EC6 /* VirtualWalletCore */,
+				5D45E82423FB9620008A3EC6 /* VirtualWalletCoreTests */,
 				5F2769C323D764880081EE00 /* Products */,
 				DC40AC4579EE14DEB3181413 /* Pods */,
 				80DBB86A03F8BD12A97E05F1 /* Frameworks */,
@@ -92,6 +201,8 @@
 			isa = PBXGroup;
 			children = (
 				5F2769C223D764880081EE00 /* VirtualWallet.app */,
+				5D45E81623FB9620008A3EC6 /* VirtualWalletCore.framework */,
+				5D45E81E23FB9620008A3EC6 /* VirtualWalletCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -267,7 +378,55 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		5D45E81123FB9620008A3EC6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D45E82823FB9620008A3EC6 /* VirtualWalletCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		5D45E81523FB9620008A3EC6 /* VirtualWalletCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D45E83223FB9620008A3EC6 /* Build configuration list for PBXNativeTarget "VirtualWalletCore" */;
+			buildPhases = (
+				5D45E81123FB9620008A3EC6 /* Headers */,
+				5D45E81223FB9620008A3EC6 /* Sources */,
+				5D45E81323FB9620008A3EC6 /* Frameworks */,
+				5D45E81423FB9620008A3EC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VirtualWalletCore;
+			productName = VirtualWalletCore;
+			productReference = 5D45E81623FB9620008A3EC6 /* VirtualWalletCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D45E81D23FB9620008A3EC6 /* VirtualWalletCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D45E83323FB9620008A3EC6 /* Build configuration list for PBXNativeTarget "VirtualWalletCoreTests" */;
+			buildPhases = (
+				5D45E81A23FB9620008A3EC6 /* Sources */,
+				5D45E81B23FB9620008A3EC6 /* Frameworks */,
+				5D45E81C23FB9620008A3EC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D45E82123FB9620008A3EC6 /* PBXTargetDependency */,
+				5D45E82323FB9620008A3EC6 /* PBXTargetDependency */,
+			);
+			name = VirtualWalletCoreTests;
+			productName = VirtualWalletCoreTests;
+			productReference = 5D45E81E23FB9620008A3EC6 /* VirtualWalletCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5F2769C123D764880081EE00 /* VirtualWallet */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F2769D623D7648C0081EE00 /* Build configuration list for PBXNativeTarget "VirtualWallet" */;
@@ -277,10 +436,12 @@
 				5F2769BF23D764880081EE00 /* Frameworks */,
 				5F2769C023D764880081EE00 /* Resources */,
 				8B9FD83C9C42A82287BF51E2 /* [CP] Embed Pods Frameworks */,
+				5D45E82D23FB9620008A3EC6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5D45E82A23FB9620008A3EC6 /* PBXTargetDependency */,
 			);
 			name = VirtualWallet;
 			productName = VirtualWallet;
@@ -293,10 +454,18 @@
 		5F2769BA23D764880081EE00 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = Brahua;
 				TargetAttributes = {
+					5D45E81523FB9620008A3EC6 = {
+						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
+					};
+					5D45E81D23FB9620008A3EC6 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 5F2769C123D764880081EE00;
+					};
 					5F2769C123D764880081EE00 = {
 						CreatedOnToolsVersion = 11.2;
 					};
@@ -316,11 +485,27 @@
 			projectRoot = "";
 			targets = (
 				5F2769C123D764880081EE00 /* VirtualWallet */,
+				5D45E81523FB9620008A3EC6 /* VirtualWalletCore */,
+				5D45E81D23FB9620008A3EC6 /* VirtualWalletCoreTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5D45E81423FB9620008A3EC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D45E81C23FB9620008A3EC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5F2769C023D764880081EE00 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -387,6 +572,29 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5D45E81223FB9620008A3EC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D94C0A523FCEAAF00A4C562 /* Gasto.swift in Sources */,
+				5D94C0A223FCEAAF00A4C562 /* Transaccion.swift in Sources */,
+				5D94C0A423FCEAAF00A4C562 /* Date.swift in Sources */,
+				5D94C0A723FCEAAF00A4C562 /* Presupuesto.swift in Sources */,
+				5D94C0A023FCEAAF00A4C562 /* Cuenta.swift in Sources */,
+				5D94C0A323FCEAAF00A4C562 /* Enums.swift in Sources */,
+				5D94C0A123FCEAAF00A4C562 /* Ingreso.swift in Sources */,
+				5D94C0A623FCEAAF00A4C562 /* Persona.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D45E81A23FB9620008A3EC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D45E82623FB9620008A3EC6 /* VirtualWalletCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5F2769BE23D764880081EE00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -405,6 +613,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D45E82123FB9620008A3EC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D45E81523FB9620008A3EC6 /* VirtualWalletCore */;
+			targetProxy = 5D45E82023FB9620008A3EC6 /* PBXContainerItemProxy */;
+		};
+		5D45E82323FB9620008A3EC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F2769C123D764880081EE00 /* VirtualWallet */;
+			targetProxy = 5D45E82223FB9620008A3EC6 /* PBXContainerItemProxy */;
+		};
+		5D45E82A23FB9620008A3EC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D45E81523FB9620008A3EC6 /* VirtualWalletCore */;
+			targetProxy = 5D45E82923FB9620008A3EC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5F2769CB23D764890081EE00 /* Main.storyboard */ = {
@@ -426,6 +652,105 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5D45E82E23FB9620008A3EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 56WNWMM5PJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = VirtualWalletCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brahua.VirtualWalletCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5D45E82F23FB9620008A3EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 56WNWMM5PJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = VirtualWalletCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brahua.VirtualWalletCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D45E83023FB9620008A3EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VirtualWalletCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brahua.VirtualWalletCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VirtualWallet.app/VirtualWallet";
+			};
+			name = Debug;
+		};
+		5D45E83123FB9620008A3EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VirtualWalletCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brahua.VirtualWalletCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VirtualWallet.app/VirtualWallet";
+			};
+			name = Release;
+		};
 		5F2769D423D7648C0081EE00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -544,6 +869,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB672B0082669C667CB29ECC /* Pods-VirtualWallet.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -566,6 +892,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B463C06AC2944E8AE01040A6 /* Pods-VirtualWallet.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -587,6 +914,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5D45E83223FB9620008A3EC6 /* Build configuration list for PBXNativeTarget "VirtualWalletCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D45E82E23FB9620008A3EC6 /* Debug */,
+				5D45E82F23FB9620008A3EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D45E83323FB9620008A3EC6 /* Build configuration list for PBXNativeTarget "VirtualWalletCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D45E83023FB9620008A3EC6 /* Debug */,
+				5D45E83123FB9620008A3EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5F2769BD23D764880081EE00 /* Build configuration list for PBXProject "VirtualWallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

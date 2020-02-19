@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import VirtualWalletCore
 
 class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let persona = Persona(nombre: "Josue", apellido: "Bravo")
+        persona.cuenta = Cuenta(cuenta: 0, descripcion: "Cuenta Personal")
+        print(persona.nombreCompleto)
         customButtom()
     }
     
