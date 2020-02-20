@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>547043330870-hniu77rhcmnl7cqhnsvqh45go395hej1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.547043330870-hniu77rhcmnl7cqhnsvqh45go395hej1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBLAZeI2-GTsXqgqAa3WetyBTVnza8lWt8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>547043330870</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.brahua.VirtualWallet</string>
+	<key>PROJECT_ID</key>
+	<string>virtualwallet-d5164</string>
+	<key>STORAGE_BUCKET</key>
+	<string>virtualwallet-d5164.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:547043330870:ios:6e02ff6417e259be570197</string>
+	<key>DATABASE_URL</key>
+	<string>https://virtualwallet-d5164.firebaseio.com</string>
+</dict>
+</plist>

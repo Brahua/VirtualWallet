@@ -32,7 +32,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="9cN-QA-Aq4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="yTW-Fw-4ka">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="104.33333333333334"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

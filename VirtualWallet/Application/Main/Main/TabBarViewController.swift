@@ -28,7 +28,6 @@ class TabBarViewController: UITabBarController {
         menuButtonFrame.origin.x = view.bounds.width / 2 - menuButtonFrame.size.width / 2
         menuButton.frame = menuButtonFrame
         menuButton.setImage(UIImage(named: "plus-white"), for: .normal)
-        
         menuButton.backgroundColor = UIColor(named: "Secondary")
         menuButton.layer.cornerRadius = 16
         view.addSubview(menuButton)

@@ -34,7 +34,6 @@ class PresupuestoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let cell = UINib(nibName: "TransaccionCelda", bundle: Bundle.main)
-
         tableView.register(cell, forCellReuseIdentifier: "TransaccionCelda")
     }
 

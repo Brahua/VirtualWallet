@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="Dd0-2l-mcQ">
             <objects>
-                <viewController id="xnh-Y6-ha5" sceneMemberID="viewController">
+                <viewController restorationIdentifier="SignIn" storyboardIdentifier="SignIn" id="xnh-Y6-ha5" customClass="SignInViewController" customModule="VirtualWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RKE-x8-bAI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,9 +33,9 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgC-yC-tFO">
-                                        <rect key="frame" x="171.66666666666666" y="19" width="71" height="37"/>
+                                        <rect key="frame" x="157.66666666666666" y="19" width="98.999999999999972" height="37"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
-                                        <state key="normal" title="SIGN UP">
+                                        <state key="normal" title="Registrarme">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
@@ -126,9 +126,9 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uY-x8-ZiQ">
-                                <rect key="frame" x="161.66666666666666" y="471" width="91" height="34"/>
+                                <rect key="frame" x="150.66666666666666" y="471" width="112.99999999999997" height="34"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                <state key="normal" title="Sing up with">
+                                <state key="normal" title="Registrarse con">
                                     <color key="titleColor" name="Secondary"/>
                                 </state>
                             </button>
@@ -147,16 +147,16 @@
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qsP-em-c3n">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qsP-em-c3n" colorLabel="IBBuiltInLabel-Gray">
                                                         <rect key="frame" x="0.0" y="44" width="374" height="34"/>
                                                         <color key="tintColor" name="Secondary"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wW-Jm-lOe">
                                                         <rect key="frame" x="0.0" y="88" width="374" height="33"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                                        <state key="normal" title="Forgot password">
+                                                        <state key="normal" title="¿Olvidaste tu contraseña?">
                                                             <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                     </button>
@@ -169,7 +169,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="Fft-uj-G8r"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                                <state key="normal" title="Sign In">
+                                                <state key="normal" title="Iniciar sesion">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -188,7 +188,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="ecm-8Z-ZHZ" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="8Qq-Ue-XOj"/>
+                                                    <action selector="iniciarSesion:" destination="xnh-Y6-ha5" eventType="touchUpInside" id="kX4-Tq-nsW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -223,6 +223,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gkh-gV-gCZ"/>
                     </view>
+                    <connections>
+                        <outlet property="contraseniaTxtField" destination="qsP-em-c3n" id="dsX-Av-ev2"/>
+                        <outlet property="emailTxtField" destination="bLj-qw-2D6" id="DEp-PH-00W"/>
+                        <segue destination="ecm-8Z-ZHZ" kind="modal" identifier="signInToMain" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="es0-9e-xdc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ido-DN-mqA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -231,7 +236,9 @@
         <!--Main-->
         <scene sceneID="Eyx-iJ-Fne">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="ecm-8Z-ZHZ" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Main" id="ecm-8Z-ZHZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VOn-L3-3jx"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SrS-xs-x3E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1002" y="130"/>

@@ -18,6 +18,11 @@ class OnBoardingContainerViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "iniciarSesionSegue" {
+            UserDefaults.standard.set(true, forKey: "onBoardingVisto")
+            UserDefaults.standard.synchronize()
+        }
 
         guard segue.identifier == "openOnBoarding", let destination = segue.destination as? OnBoardingViewController  else {
             return
