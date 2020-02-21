@@ -24,78 +24,36 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func iniciarSesion(_ sender: Any) {
-        guard let email = emailTxtField.text else {
-            print("Error: emailTxtField.")
-            return
-        }
-        guard let contrasenia = contraseniaTxtField.text else {
-            print("Error: contraseniaTxtField")
-            return
-        }
-        let valido = validarEmail(email) && validarContrasenia(contrasenia)
-        
-        if valido {
-            Auth.auth().signIn(withEmail: email, password: contrasenia) { [weak self] (result, error) in
-                if let error = error {
-                    let alert = UIAlertController(title: "Alerta", message: error.localizedDescription, preferredStyle: .alert)
-                    let actionOk = UIAlertAction(title: "Ok", style: .default, handler: nil)
-                    alert.addAction(actionOk)
-                    self?.present(alert, animated: true, completion: nil)
-                    return
-                }
-                
-                if result != nil {
-                    self?.performSegue(withIdentifier: "signInToMain", sender: self)
-                }
+        SignInViewModel.iniciarSesionCon(email: emailTxtField.text, contrasenia: contraseniaTxtField.text) { [weak self] (success, error) in
+            if let error = error {
+                let alert = UIAlertController(title: "Alerta", message: error.localizedDescription, preferredStyle: .alert)
+                let actionOk = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                alert.addAction(actionOk)
+                self?.present(alert, animated: true, completion: nil)
+                return
+            }
+            
+            if success {
+                self?.performSegue(withIdentifier: "signInToMain", sender: self)
             }
         }
     }
     
-    private func validarEmail(_ email: String) -> Bool {
-        if email.isEmpty {
-            print("Ingrese su email.")
-            return false
+    
+    @IBAction func iniciarSesionFacebook(_ sender: Any) {
+        SignInViewModel.iniciarSesionConFacebook(viewController: self) { [weak self] (success, error) in
+            if let error = error {
+                let alert = UIAlertController(title: "Alerta", message: error.localizedDescription, preferredStyle: .alert)
+                let actionOk = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                alert.addAction(actionOk)
+                self?.present(alert, animated: true, completion: nil)
+                return
+            }
+            
+            if success {
+                self?.performSegue(withIdentifier: "signInToMain", sender: self)
+            }
         }
-        if !coincideCon(email, pattern: PATTERN_EMAIL) {
-            print("Email inválido")
-            return false
-        }
-        
-        return true
     }
     
-    private func validarContrasenia(_ contrasenia: String) -> Bool {
-        if contrasenia.isEmpty {
-            print("Ingrese su contraseña.")
-            return false
-        }
-        return true
-    }
-    
-    private func coincideCon(_ cadena: String, pattern: String) -> Bool {
-        let range = NSRange(location: 0, length: cadena.count)
-        var regex: NSRegularExpression
-        
-        do {
-            regex = try NSRegularExpression(pattern: pattern, options: [])
-        } catch {
-            print("validarExpresionRegular: Expresión regular inválida.")
-            return false
-        }
-        
-        let regexMatch = regex.firstMatch(in: cadena, options: [], range: range)
-        return regexMatch == nil ? false : true
-    }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

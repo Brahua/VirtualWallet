@@ -177,6 +177,12 @@ PODS:
     - FBSDKLoginKit/Login (= 6.0.0)
   - FBSDKLoginKit/Login (6.0.0):
     - FBSDKCoreKit (~> 6.0.0)
+  - FBSDKPlacesKit (4.44.1):
+    - FBSDKCoreKit
+  - FBSDKShareKit (6.0.0):
+    - FBSDKShareKit/Share (= 6.0.0)
+  - FBSDKShareKit/Share (6.0.0):
+    - FBSDKCoreKit (~> 6.0.0)
   - Firebase/Auth (6.17.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.4.3)
@@ -317,7 +323,10 @@ PODS:
 DEPENDENCIES:
   - Crashlytics
   - Fabric
+  - FBSDKCoreKit
   - FBSDKLoginKit
+  - FBSDKPlacesKit
+  - FBSDKShareKit
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Firestore
@@ -335,6 +344,8 @@ SPEC REPOS:
     - Fabric
     - FBSDKCoreKit
     - FBSDKLoginKit
+    - FBSDKPlacesKit
+    - FBSDKShareKit
     - Firebase
     - FirebaseAnalytics
     - FirebaseAnalyticsInterop
@@ -371,6 +382,8 @@ SPEC CHECKSUMS:
   Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
   FBSDKCoreKit: fe738b172590e622c86735b45e20d196848b54df
   FBSDKLoginKit: fa57df1b967fe0e147b25bede6ea4e9cdf4d64be
+  FBSDKPlacesKit: 51ea17fa8c831088177676ce10b740e4497934b0
+  FBSDKShareKit: 210dcda2603042cf73f31983fc99df4dac06f1d8
   Firebase: 2672e5636b42f977177716317e68346ae5e9de25
   FirebaseAnalytics: cf95d3aab897612783020fbd98401d5366f135ee
   FirebaseAnalyticsInterop: 3f86269c38ae41f47afeb43ebf32a001f58fcdae
@@ -400,6 +413,6 @@ SPEC CHECKSUMS:
   TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
   TwitterKit: 5e4f41d70b9abdb41df5467f52d7aa2c0fd26ebb
 
-PODFILE CHECKSUM: 09d7182fcef1bf60560647955da69c25be305ce7
+PODFILE CHECKSUM: 790491554c275204c99eeaa6613e2a78cea099a6
 
 COCOAPODS: 1.8.4

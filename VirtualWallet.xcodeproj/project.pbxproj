@@ -24,6 +24,9 @@
 		5D94C0A723FCEAAF00A4C562 /* Presupuesto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C09F23FCEAAF00A4C562 /* Presupuesto.swift */; };
 		5D94C0A923FE5A6200A4C562 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D94C0A823FE5A6200A4C562 /* GoogleService-Info.plist */; };
 		5D94C0AB23FE5C4800A4C562 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C0AA23FE5C4800A4C562 /* SignInViewController.swift */; };
+		5D94C0AD23FF7B1300A4C562 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C0AC23FF7B1300A4C562 /* SignInViewModel.swift */; };
+		5D94C0B123FF7C3A00A4C562 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C0B023FF7C3A00A4C562 /* Pattern.swift */; };
+		5D94C0B323FF7D9500A4C562 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C0B223FF7D9500A4C562 /* Util.swift */; };
 		5F2769C623D764890081EE00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2769C523D764890081EE00 /* AppDelegate.swift */; };
 		5F2769C823D764890081EE00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2769C723D764890081EE00 /* SceneDelegate.swift */; };
 		5F2769CD23D764890081EE00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769CB23D764890081EE00 /* Main.storyboard */; };
@@ -104,6 +107,9 @@
 		5D94C09F23FCEAAF00A4C562 /* Presupuesto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presupuesto.swift; sourceTree = "<group>"; };
 		5D94C0A823FE5A6200A4C562 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5D94C0AA23FE5C4800A4C562 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		5D94C0AC23FF7B1300A4C562 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		5D94C0B023FF7C3A00A4C562 /* Pattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pattern.swift; sourceTree = "<group>"; };
+		5D94C0B223FF7D9500A4C562 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		5F2769C223D764880081EE00 /* VirtualWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2769C523D764890081EE00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F2769C723D764890081EE00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -185,6 +191,22 @@
 			path = VirtualWalletCoreTests;
 			sourceTree = "<group>";
 		};
+		5D94C0AE23FF7C0100A4C562 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				5D94C0B223FF7D9500A4C562 /* Util.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		5D94C0AF23FF7C0F00A4C562 /* Estaticos */ = {
+			isa = PBXGroup;
+			children = (
+				5D94C0B023FF7C3A00A4C562 /* Pattern.swift */,
+			);
+			path = Estaticos;
+			sourceTree = "<group>";
+		};
 		5F2769B923D764880081EE00 = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +232,8 @@
 		5F2769C423D764890081EE00 /* VirtualWallet */ = {
 			isa = PBXGroup;
 			children = (
+				5D94C0AF23FF7C0F00A4C562 /* Estaticos */,
+				5D94C0AE23FF7C0100A4C562 /* Util */,
 				5F2769F623D7B1310081EE00 /* Extensions */,
 				5F2769DB23D765410081EE00 /* Resources */,
 				5F2769DA23D7651C0081EE00 /* Base */,
@@ -294,6 +318,7 @@
 			children = (
 				5F2769F123D773C20081EE00 /* SignIn.storyboard */,
 				5D94C0AA23FE5C4800A4C562 /* SignInViewController.swift */,
+				5D94C0AC23FF7B1300A4C562 /* SignInViewModel.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -623,8 +648,11 @@
 				5F38745623DA4E72006C26A5 /* TabBarViewController.swift in Sources */,
 				181524C423DA968E00E7A07C /* PresupuestoViewController.swift in Sources */,
 				5F38744E23D9FB9F006C26A5 /* OnBoardingStepsViewController.swift in Sources */,
+				5D94C0B123FF7C3A00A4C562 /* Pattern.swift in Sources */,
+				5D94C0B323FF7D9500A4C562 /* Util.swift in Sources */,
 				5F2769C623D764890081EE00 /* AppDelegate.swift in Sources */,
 				5F2769C823D764890081EE00 /* SceneDelegate.swift in Sources */,
+				5D94C0AD23FF7B1300A4C562 /* SignInViewModel.swift in Sources */,
 				5D94C0AB23FE5C4800A4C562 /* SignInViewController.swift in Sources */,
 				5F38745223DA28E3006C26A5 /* TransaccionViewController.swift in Sources */,
 			);

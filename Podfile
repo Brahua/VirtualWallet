@@ -4,6 +4,7 @@ inhibit_all_warnings!
 target 'VirtualWallet' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  # use_modular_headers!
     pod 'lottie-ios'
     pod 'Fabric'
     pod 'Crashlytics'
@@ -13,6 +14,9 @@ target 'VirtualWallet' do
     pod 'Firebase/Firestore'
     pod 'Firebase/InAppMessagingDisplay'
     pod 'FBSDKLoginKit'
+    pod 'FBSDKCoreKit'
+    pod 'FBSDKShareKit'
+    pod 'FBSDKPlacesKit'
     pod 'SwiftyStoreKit'
     pod 'TwitterKit'
   # Pods for VirtualWallet
