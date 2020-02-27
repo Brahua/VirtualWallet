@@ -9,13 +9,37 @@
 import UIKit
 import Firebase
 import FBSDKCoreKit
+import TwitterKit
+import GoogleSignIn
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error {
+          if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
+            print("The user has not signed in before or they have since signed out.")
+          } else {
+            print("\(error.localizedDescription)")
+          }
+          return
+        }
+        let userId = user.userID
+        print(userId)
+        
+        
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
+              withError error: Error!) {
+      // Perform any operations when the user disconnects from app here.
+      // ...
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        TWTRTwitter.sharedInstance().start(withConsumerKey: "dkz2mRhplHqck8ZP5HGC6jsoT", consumerSecret: "gW4nxzNMt1OiLW4ZF9pn51m4Kr3inZpJTPNyfBvEYUMUr3nAbR")
+        GIDSignIn.sharedInstance().clientID = "547043330870-hniu77rhcmnl7cqhnsvqh45go395hej1.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().delegate = self
         //Facebook Configuration
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         FirebaseApp.configure()
@@ -41,6 +65,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         //Facebook configuration
         if ApplicationDelegate.shared.application(app, open: url, options: options) {
+            return true
+        }
+        if TWTRTwitter.sharedInstance().application(app, open: url, options: options) {
+            return true
+        }
+        if GIDSignIn.sharedInstance().handle(url) {
             return true
         }
         return true

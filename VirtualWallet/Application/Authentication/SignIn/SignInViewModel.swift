@@ -9,6 +9,7 @@
 import Foundation
 import FirebaseAuth
 import FBSDKLoginKit
+import TwitterKit
 
 class SignInViewModel {
     
@@ -57,6 +58,27 @@ class SignInViewModel {
                     return
                 }
                 //let userInformation = result?.additionalUserInfo?.profile
+                handler?(true, nil)
+            }
+        }
+    }
+    
+    static func iniciarSesionConTwitter(viewController: UIViewController, handler: SignInHandler?) {
+        TWTRTwitter.sharedInstance().logIn(with: viewController) { (session, error) in
+            guard let session = session else {
+                handler?(false, error)
+                return
+            }
+            let authToken = session.authToken
+            let authSecret = session.authTokenSecret
+            
+            let credentials = TwitterAuthProvider.credential(withToken: authToken, secret: authSecret)
+            Auth.auth().signIn(with: credentials) { (result, error) in
+                if let error = error {
+                    handler?(false, error)
+                    return
+                }
+                
                 handler?(true, nil)
             }
         }

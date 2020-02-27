@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import GoogleSignIn
 
 class SignInViewController: UIViewController {
 
@@ -17,7 +18,13 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        GIDSignIn.sharedInstance()?.presentingViewController = self
 
+        // Automatically sign in the user.
+        GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+
+        // ...
         
     }
     
@@ -40,6 +47,27 @@ class SignInViewController: UIViewController {
     
     @IBAction func iniciarSesionFacebook(_ sender: Any) {
         SignInViewModel.iniciarSesionConFacebook(viewController: self) { [weak self] (success, error) in
+            if let error = error {
+                let alert = UIAlertController(title: "Alerta", message: error.localizedDescription, preferredStyle: .alert)
+                let actionOk = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                alert.addAction(actionOk)
+                self?.present(alert, animated: true, completion: nil)
+                return
+            }
+            
+            if success {
+                self?.performSegue(withIdentifier: "signInToMain", sender: self)
+            }
+        }
+    }
+    
+    
+    @IBAction func iniciarSesionConGoogle(_ sender: UIButton) {
+        GIDSignIn.sharedInstance()?.signIn()
+    }
+    
+    @IBAction func iniciarSesionConTwitter(_ sender: UIButton) {
+        SignInViewModel.iniciarSesionConTwitter(viewController: self) { [weak self] (success, error) in
             if let error = error {
                 let alert = UIAlertController(title: "Alerta", message: error.localizedDescription, preferredStyle: .alert)
                 let actionOk = UIAlertAction(title: "Ok", style: .default, handler: nil)

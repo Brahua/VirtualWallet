@@ -19,6 +19,7 @@ target 'VirtualWallet' do
     pod 'FBSDKPlacesKit'
     pod 'SwiftyStoreKit'
     pod 'TwitterKit'
+    pod 'GoogleSignIn'
   # Pods for VirtualWallet
 
 end

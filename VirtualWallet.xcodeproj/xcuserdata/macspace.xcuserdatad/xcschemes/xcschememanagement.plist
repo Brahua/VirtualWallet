@@ -7,12 +7,12 @@
 		<key>VirtualWallet.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>38</integer>
+			<integer>41</integer>
 		</dict>
 		<key>VirtualWalletCore.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>39</integer>
+			<integer>42</integer>
 		</dict>
 	</dict>
 </dict>
