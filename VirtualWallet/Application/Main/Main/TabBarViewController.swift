@@ -8,16 +8,24 @@
 
 import UIKit
 import VirtualWalletCore
+import FirebaseAuth
 
 class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let persona = Persona(nombre: "Josue", apellido: "Bravo")
         persona.cuenta = Cuenta(cuenta: 0, descripcion: "Cuenta Personal")
         print(persona.nombreCompleto)
         customButtom()
+        
+        //Cerrar sesion
+        /*let firebaseAuth = Auth.auth()
+        do {
+          try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+          print("Error signing out: %@", signOutError)
+        }*/
     }
     
     func customButtom() {

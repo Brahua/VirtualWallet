@@ -8,12 +8,16 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 import FBSDKCoreKit
 import TwitterKit
 import GoogleSignIn
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+    
+    var window: UIWindow?
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
@@ -24,10 +28,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
           }
           return
         }
+        guard let authentication = user.authentication else { return }
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                          accessToken: authentication.accessToken)
+        
+        Auth.auth().signIn(with: credential) { (authResult, error) in
+          if let error = error {
+            let alert = UIAlertController(title: "Alerta", message: error.localizedDescription, preferredStyle: .alert)
+            let actionOk = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alert.addAction(actionOk)
+            print(error.localizedDescription)
+            //self?.present(alert, animated: true, completion: nil)
+            return
+          }
+            
+          let mainStoryboardIpad : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewControlleripad : UIViewController = mainStoryboardIpad.instantiateInitialViewController() ?? UIViewController()
+          self.window = UIWindow(frame: UIScreen.main.bounds)
+          self.window?.rootViewController = initialViewControlleripad
+          self.window?.makeKeyAndVisible()
+          
+        }
         let userId = user.userID
         print(userId)
-        
-        
+        //Redireccion
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
@@ -38,11 +62,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         TWTRTwitter.sharedInstance().start(withConsumerKey: "dkz2mRhplHqck8ZP5HGC6jsoT", consumerSecret: "gW4nxzNMt1OiLW4ZF9pn51m4Kr3inZpJTPNyfBvEYUMUr3nAbR")
+        FirebaseApp.configure()
         GIDSignIn.sharedInstance().clientID = "547043330870-hniu77rhcmnl7cqhnsvqh45go395hej1.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
         //Facebook Configuration
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
-        FirebaseApp.configure()
         return true
     }
 

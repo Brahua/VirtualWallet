@@ -8,6 +8,8 @@
 
 import UIKit
 import FBSDKCoreKit
+import Firebase
+import FirebaseAuth
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -24,6 +26,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if onBoardingVisto {
             name = "SignIn"
         }
+        
+        let session = Auth.auth().currentUser != nil
+        if session {
+            name = "Main"
+        }
+        
         let viewController = UIStoryboard(name: name, bundle:nil).instantiateInitialViewController()
         window.rootViewController = viewController
         self.window = window
