@@ -50,14 +50,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
           
         }
         let userId = user.userID
-        print(userId)
-        //Redireccion
+        print(user.profile.name ?? "")
+        print(userId ?? "")
+        initialViewController()
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
               withError error: Error!) {
       // Perform any operations when the user disconnects from app here.
       // ...
+    }
+    
+    func initialViewController() {
+        let onBoardingVisto = UserDefaults.standard.value(forKey: "onBoardingVisto") as? Bool ?? false
+        window = UIWindow(frame: UIScreen.main.bounds)
+        var name = "OnBoarding"
+        if onBoardingVisto {
+            name = "SignIn"
+        }
+        
+        let session = Auth.auth().currentUser != nil
+        if session {
+            name = "Main"
+        }
+        
+        let viewController = UIStoryboard(name: name, bundle: Bundle.main).instantiateInitialViewController()
+        
+        window?.rootViewController = viewController
+        window?.makeKeyAndVisible()
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

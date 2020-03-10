@@ -10,12 +10,7 @@ import UIKit
 import FirebaseAuth
 import GoogleSignIn
 
-class SignInViewController: UIViewController, GIDSignInDelegate {
-    
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        //
-        print("entre")
-    }
+class SignInViewController: UIViewController {
     
 
     @IBOutlet weak var emailTxtField: UITextField!
