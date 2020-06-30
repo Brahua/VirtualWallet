@@ -12,8 +12,6 @@
 		5D45E81F23FB9620008A3EC6 /* VirtualWalletCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D45E81623FB9620008A3EC6 /* VirtualWalletCore.framework */; };
 		5D45E82623FB9620008A3EC6 /* VirtualWalletCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45E82523FB9620008A3EC6 /* VirtualWalletCoreTests.swift */; };
 		5D45E82823FB9620008A3EC6 /* VirtualWalletCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D45E81823FB9620008A3EC6 /* VirtualWalletCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D45E82B23FB9620008A3EC6 /* VirtualWalletCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D45E81623FB9620008A3EC6 /* VirtualWalletCore.framework */; };
-		5D45E82C23FB9620008A3EC6 /* VirtualWalletCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D45E81623FB9620008A3EC6 /* VirtualWalletCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5D94C0A023FCEAAF00A4C562 /* Cuenta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C09823FCEAAE00A4C562 /* Cuenta.swift */; };
 		5D94C0A123FCEAAF00A4C562 /* Ingreso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C09923FCEAAE00A4C562 /* Ingreso.swift */; };
 		5D94C0A223FCEAAF00A4C562 /* Transaccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C09A23FCEAAE00A4C562 /* Transaccion.swift */; };
@@ -43,10 +41,19 @@
 		5F2769FA23D7B78C0081EE00 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2769F923D7B78C0081EE00 /* OnBoarding.storyboard */; };
 		5F2769FC23D7BB8D0081EE00 /* OnBoardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2769FB23D7BB8D0081EE00 /* OnBoardingContainerViewController.swift */; };
 		5F2769FE23D7BC7E0081EE00 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2769FD23D7BC7E0081EE00 /* OnBoardingViewController.swift */; };
+		5F34A08324A45F96008A0D47 /* AgregarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34A08224A45F96008A0D47 /* AgregarViewController.swift */; };
+		5F34A08524A4605E008A0D47 /* AgregarTransaccionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34A08424A4605E008A0D47 /* AgregarTransaccionViewModel.swift */; };
 		5F38744E23D9FB9F006C26A5 /* OnBoardingStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F38744D23D9FB9F006C26A5 /* OnBoardingStepsViewController.swift */; };
 		5F38745223DA28E3006C26A5 /* TransaccionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F38745123DA28E2006C26A5 /* TransaccionViewController.swift */; };
 		5F38745423DA3B9A006C26A5 /* EmptyState.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F38745323DA3B9A006C26A5 /* EmptyState.xib */; };
 		5F38745623DA4E72006C26A5 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F38745523DA4E72006C26A5 /* TabBarViewController.swift */; };
+		5FCA85E224A31BF9003B004A /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA85E124A31BF9003B004A /* Usuario.swift */; };
+		5FCA85E424A31C58003B004A /* Cuenta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA85E324A31C58003B004A /* Cuenta.swift */; };
+		5FCA85E624A31CB4003B004A /* Presupuesto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA85E524A31CB4003B004A /* Presupuesto.swift */; };
+		5FCA85E824A31CE2003B004A /* Transaccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA85E724A31CE2003B004A /* Transaccion.swift */; };
+		5FCA85ED24A32430003B004A /* CategoriaPresupuesto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA85EC24A32430003B004A /* CategoriaPresupuesto.swift */; };
+		5FCA85EF24A325D8003B004A /* CategoriaTransaccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA85EE24A325D8003B004A /* CategoriaTransaccion.swift */; };
+		5FCA85F124A32C70003B004A /* TransaccionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA85F024A32C70003B004A /* TransaccionViewModel.swift */; };
 		E8031DE8842F66EC9D679DE1 /* Pods_VirtualWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A3F0213338D0C5BD1CD2F61 /* Pods_VirtualWallet.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,28 +72,7 @@
 			remoteGlobalIDString = 5F2769C123D764880081EE00;
 			remoteInfo = VirtualWallet;
 		};
-		5D45E82923FB9620008A3EC6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5F2769BA23D764880081EE00 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5D45E81523FB9620008A3EC6;
-			remoteInfo = VirtualWalletCore;
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		5D45E82D23FB9620008A3EC6 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5D45E82C23FB9620008A3EC6 /* VirtualWalletCore.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		181524C123DA94FE00E7A07C /* TransaccionCelda.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransaccionCelda.xib; sourceTree = "<group>"; };
@@ -128,10 +114,19 @@
 		5F2769F923D7B78C0081EE00 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		5F2769FB23D7BB8D0081EE00 /* OnBoardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContainerViewController.swift; sourceTree = "<group>"; };
 		5F2769FD23D7BC7E0081EE00 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		5F34A08224A45F96008A0D47 /* AgregarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarViewController.swift; sourceTree = "<group>"; };
+		5F34A08424A4605E008A0D47 /* AgregarTransaccionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarTransaccionViewModel.swift; sourceTree = "<group>"; };
 		5F38744D23D9FB9F006C26A5 /* OnBoardingStepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingStepsViewController.swift; sourceTree = "<group>"; };
 		5F38745123DA28E2006C26A5 /* TransaccionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransaccionViewController.swift; sourceTree = "<group>"; };
 		5F38745323DA3B9A006C26A5 /* EmptyState.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyState.xib; sourceTree = "<group>"; };
 		5F38745523DA4E72006C26A5 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		5FCA85E124A31BF9003B004A /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		5FCA85E324A31C58003B004A /* Cuenta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cuenta.swift; sourceTree = "<group>"; };
+		5FCA85E524A31CB4003B004A /* Presupuesto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presupuesto.swift; sourceTree = "<group>"; };
+		5FCA85E724A31CE2003B004A /* Transaccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaccion.swift; sourceTree = "<group>"; };
+		5FCA85EC24A32430003B004A /* CategoriaPresupuesto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaPresupuesto.swift; sourceTree = "<group>"; };
+		5FCA85EE24A325D8003B004A /* CategoriaTransaccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaTransaccion.swift; sourceTree = "<group>"; };
+		5FCA85F024A32C70003B004A /* TransaccionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransaccionViewModel.swift; sourceTree = "<group>"; };
 		7A3F0213338D0C5BD1CD2F61 /* Pods_VirtualWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VirtualWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B463C06AC2944E8AE01040A6 /* Pods-VirtualWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualWallet.release.xcconfig"; path = "Target Support Files/Pods-VirtualWallet/Pods-VirtualWallet.release.xcconfig"; sourceTree = "<group>"; };
 		DB672B0082669C667CB29ECC /* Pods-VirtualWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualWallet.debug.xcconfig"; path = "Target Support Files/Pods-VirtualWallet/Pods-VirtualWallet.debug.xcconfig"; sourceTree = "<group>"; };
@@ -157,7 +152,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D45E82B23FB9620008A3EC6 /* VirtualWalletCore.framework in Frameworks */,
 				E8031DE8842F66EC9D679DE1 /* Pods_VirtualWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +239,7 @@
 		5F2769D923D764C10081EE00 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				5FCA85E024A31B53003B004A /* Core */,
 				5F2769DE23D766340081EE00 /* Main */,
 				5F2769DD23D766220081EE00 /* Authentication */,
 			);
@@ -330,6 +325,7 @@
 				5F38745123DA28E2006C26A5 /* TransaccionViewController.swift */,
 				5F38745323DA3B9A006C26A5 /* EmptyState.xib */,
 				181524C123DA94FE00E7A07C /* TransaccionCelda.xib */,
+				5FCA85F024A32C70003B004A /* TransaccionViewModel.swift */,
 			);
 			path = Transacciones;
 			sourceTree = "<group>";
@@ -355,6 +351,8 @@
 			isa = PBXGroup;
 			children = (
 				5F2769EF23D772600081EE00 /* Agregar.storyboard */,
+				5F34A08224A45F96008A0D47 /* AgregarViewController.swift */,
+				5F34A08424A4605E008A0D47 /* AgregarTransaccionViewModel.swift */,
 			);
 			path = Agregar;
 			sourceTree = "<group>";
@@ -382,6 +380,27 @@
 				5F2769F723D7B1580081EE00 /* Sombra.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5FCA85E024A31B53003B004A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5FCA85E924A320A7003B004A /* Enums */,
+				5FCA85E124A31BF9003B004A /* Usuario.swift */,
+				5FCA85E324A31C58003B004A /* Cuenta.swift */,
+				5FCA85E524A31CB4003B004A /* Presupuesto.swift */,
+				5FCA85E724A31CE2003B004A /* Transaccion.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5FCA85E924A320A7003B004A /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				5FCA85EC24A32430003B004A /* CategoriaPresupuesto.swift */,
+				5FCA85EE24A325D8003B004A /* CategoriaTransaccion.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		80DBB86A03F8BD12A97E05F1 /* Frameworks */ = {
@@ -461,13 +480,11 @@
 				5F2769BF23D764880081EE00 /* Frameworks */,
 				5F2769C023D764880081EE00 /* Resources */,
 				8B9FD83C9C42A82287BF51E2 /* [CP] Embed Pods Frameworks */,
-				5D45E82D23FB9620008A3EC6 /* Embed Frameworks */,
 				34BAD25CD7A31C395B0D1E6A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5D45E82A23FB9620008A3EC6 /* PBXTargetDependency */,
 			);
 			name = VirtualWallet;
 			productName = VirtualWallet;
@@ -642,18 +659,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FCA85E424A31C58003B004A /* Cuenta.swift in Sources */,
+				5FCA85ED24A32430003B004A /* CategoriaPresupuesto.swift in Sources */,
+				5F34A08524A4605E008A0D47 /* AgregarTransaccionViewModel.swift in Sources */,
+				5FCA85F124A32C70003B004A /* TransaccionViewModel.swift in Sources */,
 				5F2769F823D7B1580081EE00 /* Sombra.swift in Sources */,
 				5F2769FC23D7BB8D0081EE00 /* OnBoardingContainerViewController.swift in Sources */,
+				5FCA85E224A31BF9003B004A /* Usuario.swift in Sources */,
 				5F2769FE23D7BC7E0081EE00 /* OnBoardingViewController.swift in Sources */,
 				5F38745623DA4E72006C26A5 /* TabBarViewController.swift in Sources */,
+				5FCA85E824A31CE2003B004A /* Transaccion.swift in Sources */,
 				181524C423DA968E00E7A07C /* PresupuestoViewController.swift in Sources */,
 				5F38744E23D9FB9F006C26A5 /* OnBoardingStepsViewController.swift in Sources */,
 				5D94C0B123FF7C3A00A4C562 /* Pattern.swift in Sources */,
 				5D94C0B323FF7D9500A4C562 /* Util.swift in Sources */,
 				5F2769C623D764890081EE00 /* AppDelegate.swift in Sources */,
+				5F34A08324A45F96008A0D47 /* AgregarViewController.swift in Sources */,
+				5FCA85E624A31CB4003B004A /* Presupuesto.swift in Sources */,
 				5F2769C823D764890081EE00 /* SceneDelegate.swift in Sources */,
 				5D94C0AD23FF7B1300A4C562 /* SignInViewModel.swift in Sources */,
 				5D94C0AB23FE5C4800A4C562 /* SignInViewController.swift in Sources */,
+				5FCA85EF24A325D8003B004A /* CategoriaTransaccion.swift in Sources */,
 				5F38745223DA28E3006C26A5 /* TransaccionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -670,11 +696,6 @@
 			isa = PBXTargetDependency;
 			target = 5F2769C123D764880081EE00 /* VirtualWallet */;
 			targetProxy = 5D45E82223FB9620008A3EC6 /* PBXContainerItemProxy */;
-		};
-		5D45E82A23FB9620008A3EC6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5D45E81523FB9620008A3EC6 /* VirtualWalletCore */;
-			targetProxy = 5D45E82923FB9620008A3EC6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -915,7 +936,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB672B0082669C667CB29ECC /* Pods-VirtualWallet.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -938,7 +958,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B463C06AC2944E8AE01040A6 /* Pods-VirtualWallet.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

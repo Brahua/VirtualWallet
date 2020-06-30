@@ -12,6 +12,8 @@ class TransaccionViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
+    private var viewModel = TransaccionViewModel()
+    
     fileprivate(set) lazy var emptyStateView: UIView = {
         guard let view = Bundle.main.loadNibNamed("EmptyState", owner: nil, options: [:])?.first as? UIView else {
             return UIView()
@@ -45,7 +47,7 @@ extension TransaccionViewController: UITableViewDelegate {
 
 extension TransaccionViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let count = 0
+        let count = viewModel.totalTransacciones
         tableView.backgroundView = count == 0 ? emptyStateView : nil
         tableView.separatorStyle = count == 0 ? .none : .singleLine
         return count
